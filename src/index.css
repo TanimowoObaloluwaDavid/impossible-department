@@ -1,0 +1,76 @@
+:root {
+  --paper: #f2ede1;
+  --paper-2: #e8e1d1;
+  --ink: #17140f;
+  --ink-2: #4a443a;
+  --ink-3: #7d7666;
+  --rule: #cdc4ae;
+  --stamp: #a8291f;
+  --approve: #2c6b4a;
+  --pending: #9a6b12;
+  --accent: #2b4c7e;
+  --mono: ui-monospace, 'Cascadia Mono', Consolas, 'Courier New', monospace;
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Times New Roman', serif;
+  --sans: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --shadow: 0 18px 40px -24px rgb(23 20 15 / 55%);
+
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background-image:
+    radial-gradient(circle at 18% 12%, rgb(255 255 255 / 60%), transparent 55%),
+    radial-gradient(circle at 82% 78%, rgb(0 0 0 / 6%), transparent 60%);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
