@@ -72,7 +72,7 @@ export function PetitionForm({ seed }: PetitionFormProps) {
               setName(event.target.value)
               setOutcome(null)
             }}
-            placeholder="e.g. Xkcdbrr7"
+            placeholder="e.g. Xkcdbr7a"
             autoComplete="off"
             spellCheck={false}
           />
